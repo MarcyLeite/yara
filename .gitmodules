@@ -1,0 +1,6 @@
+[submodule "web-client"]
+	path = web-client
+	url = git@github.com:MarcyLeite/yara-web-client.git
+[submodule "backend"]
+	path = backend
+	url = git@github.com:MarcyLeite/yara-backend.git
