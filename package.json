@@ -1,0 +1,9 @@
+{
+  "scripts": {
+    "populate": "node ./scripts/db/reset-data.js"
+  },
+  "devDependencies": {
+    "@influxdata/influxdb-client": "^1.35.0",
+    "axios": "^1.9.0"
+  }
+}
