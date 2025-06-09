@@ -13,7 +13,7 @@ services:
     volumes:
       - ~/.gitconfig:/home/${USER}/.gitconfig
       - ~/.ssh:/home/${USER}/.ssh
-      - .:/home/${USER}/app
+      - .:/home/${USER}/${FOLDER}
       - .vscode-server:/home/${USER}/.vscode-server/
 
     restart: always
@@ -27,6 +27,7 @@ services:
 
   influx-db:
     image: influxdb
+    restart: always
     volumes:
       - .influx/data:/var/lib/influxdb2
       - .influx/config:/etc/influxdb2
